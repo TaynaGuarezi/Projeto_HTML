@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto html</title>
+</head>
+<body>
+    <table width="100%" >
+        <thead>
+            <tr>
+                <th colspan="6"> 
+                <nav>
+                    <table height="50px" width="100%">
+                        <tr> 
+                            <th><a href="#dados"> Meus dados</a></th>
+                            <th><a href="#apresentacao"> apresentação</a></th>
+                            <th><a href="#formacao"> Formação</a></th>
+                            <th><a href="#experiencia"> Experiências profissionais</a></th>
+                            <th><a href="#cursos"> Cursos e certificados</a></th>
+                            <th bgcolor="#FAFAD2"><a href="video.html" target="_blank">Video de apresentação</a></th>
+                        </tr>
+                    </table>
+
+                </nav>
+            </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr id="dados" bgcolor="F5F5F5">
+                <td colspan="3"> <h1>Tayna Ramos Guarezi</h1>
+                    <p>Telefone : 123-456-789</p>
+                    <p>E-mail : tayna.guarezi@gmail.com</p>
+                
+                </td>
+                <td colspan="2" >
+                    <img  src="assets/imG/gatinhofofo.png" alt="foto de perfil">
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="3">
+                    <h2 id="apresentacao">Apresentação</h2>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eligendi quisquam officiis repellat hic, expedita soluta nobis magni aperiam et architecto suscipit sequi voluptates ipsam sit accusamus, ullam nam animi alias? Similique dolore odit quidem voluptatem? Qui consequatur cupiditate voluptatem!.</p>
+
+                    <hr>
+
+                   <h2 id="formacao">Formação</h2>
+                   <h3>formação: Analise e desenvolvimento de sistemas </h3>
+                   <p>Instituição de ensino: Unicamp</p>
+                   <p>Ano de formação: 2020</p>
+
+                   <h3>Formação: MBA em ciencia de dados </h3>
+                   <p>Instituição de ensino: USP</p>
+                   <P>Ano de formação: 2023</P>
+                   <hr>
+
+                   <h2 id="experiencia">Experiências profissionais</h2>
+                   <h3>Desenvolvedor Jr</h3>
+                   <p>Empresa: Saude da economia</p>
+                   <p>Periodo: janeiro de 2020 até julho de 2022</p>
+                   <p>Uma breve descrição do que você fazia no seu cargo, quais as ferramentas e principais rotinas, como era sua interação com seus companheiros de trabalho e quais os sucessos alcançados durante seu tempo na empresa. </p>
+
+                   <h2 id="cursos">Cursos e certificados</h2>
+                   <p>Intensivo de HTML 5 e CSS 3 <a href="assets/pdf/certificado.pdf" title="Baixar certificado" download="Certificado"> Baixar Certificado</a></p>
+                    <p>Instiruição de ensino: MACH1</p>
+                    <p>Tempo de curso: 180 horas</p>
+                    <p>Criar aplicações web com HTML 5 e CSS 3, construindo projetos reais projetos reais</p> <br><br>
+
+                </td>
+
+                <td valign="top" bgcolor="F5F5F5" colspan="2">
+                    <aside>
+
+                        <h2>SKILLS</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Git e Github</li>
+                        </ul>
+                    </aside>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <footer> <h1>Fale comigo por aqui</h1>
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+            <table  width="100%">
+                <tr>
+                    <td width="50%">
+                        <label for="nome"><b>Nome</b></label> <br><br>
+                        <input size="80%" type="text" id="nome" placeholder="Escreva seu nome:" name="nome">
+                    </td> 
+
+                    <td rowspan="3" width="50%"> <br><br> 
+                        <b>Sua mensagem (Até 300 caracteres) </b> 
+                        <textarea maxlength="300" name="Mensagem:" id="mensagem" cols="80" rows="10" placeholder="Deixe sua mensagem:"></textarea>
+                    </td> 
+                        
+        
+                </tr>
+
+                <tr>
+                    <td width="50%">
+                        <label for="email"><b>E-mail</b></label> <br><br>
+                        <input size="80%" type="email" id="email" placeholder="Deixe seu email:" name="email">
+
+                    </td>
+                </tr>
+            
+                <tr >
+                    <td>
+                        <label for="fone"><b>Telefone</b></label> <br><br>
+                        <input size="80%" id="fone" type="text" placeholder="Seu telefone" name="telefone"> 
+
+                    </td>
+                </tr>
+                   
+            </table>
+            <table> <br>
+                <input type="submit">
+            </table>
+        </form>
+
+    </footer>
+
+    
+</body>
+</html>
+
+<!-- Critérios
+- A estrutura da página deve ser criada utilizando tabelas;
+- Deve-se utilizar as tags semânticas onde possível, como por exemplo, a tag nav para a nav bar, aside e footer em seus respectivos locais;
+- Na barra de navegação deve ser utilizado hipelinks para navegar dentro da própria página, o hiperlink de Vídeo de apresentação, deve abrir uma nova tab no navegador e nesta nova página deve conter o seu vídeo de apresentação utilizando legenda;
+- (Vídeo que tenha entre 0:30 e 1 minutos);
+- Para os links de baixar certificados, deve adicionar um hiperlink com o atributo que habilita esta opção;
+- Na sua lista de skills, utilizar a lista não ordenada do HTML;
+- Para os campos do formulário, utilizar o atributo para informar o tamanho dos campos;
+- Este formulário deve enviar os dados para o endpoint de teste da W3C (https://www.w3schools.com/action_page.php);
+- A mensagem do formulário não deve ultrapassar 300 caracteres. -->
